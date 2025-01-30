@@ -1,0 +1,12 @@
+C:\Users\mkeilwert\RiderProjects\car\carbeep\bin\Debug\net8.0\carbeep.deps.json
+C:\Users\mkeilwert\RiderProjects\car\carbeep\bin\Debug\net8.0\carbeep.dll
+C:\Users\mkeilwert\RiderProjects\car\carbeep\bin\Debug\net8.0\carbeep.pdb
+C:\Users\mkeilwert\RiderProjects\car\carbeep\obj\Debug\net8.0\carbeep.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\mkeilwert\RiderProjects\car\carbeep\obj\Debug\net8.0\carbeep.AssemblyInfoInputs.cache
+C:\Users\mkeilwert\RiderProjects\car\carbeep\obj\Debug\net8.0\carbeep.AssemblyInfo.cs
+C:\Users\mkeilwert\RiderProjects\car\carbeep\obj\Debug\net8.0\carbeep.csproj.CoreCompileInputs.cache
+C:\Users\mkeilwert\RiderProjects\car\carbeep\obj\Debug\net8.0\carbeep.sourcelink.json
+C:\Users\mkeilwert\RiderProjects\car\carbeep\obj\Debug\net8.0\carbeep.dll
+C:\Users\mkeilwert\RiderProjects\car\carbeep\obj\Debug\net8.0\refint\carbeep.dll
+C:\Users\mkeilwert\RiderProjects\car\carbeep\obj\Debug\net8.0\carbeep.pdb
+C:\Users\mkeilwert\RiderProjects\car\carbeep\obj\Debug\net8.0\ref\carbeep.dll

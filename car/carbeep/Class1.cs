@@ -1,32 +1,33 @@
-﻿namespace carbeep;
+﻿namespace CarBeep;
 
-class car
+public class Car
 {
-    // private variables help us define properties 
     private string color;
     private int numberOfDoors;
-    private bool isConvertable;
+    private bool isConvertible;
 
-    // Constructor - Factory for creating objects of the class
-    
-    // get and set define attributes noun-like 
-    
-    public string Color
+    public Car(string carColor, int doors, bool convertible)
     {
-        get
-        { return color;}
-        set
-        {color = value;}
+        color = carColor;
+        NumberOfDoors = doors;  // Uses property to enforce validation
+        IsConvertible = convertible;
     }
 
-    public bool IsConvertable
+    public string Color
     {
-        get; set;
+        get { return color; }
+        set { color = value; }
+    }
+
+    public bool IsConvertible
+    {
+        get { return isConvertible; }
+        set { isConvertible = value; }
     }
 
     public int NumberOfDoors
     {
-        get {return numberOfDoors;}
+        get { return numberOfDoors; }
         set
         {
             if (value <= 4)
@@ -35,10 +36,18 @@ class car
             }
             else
             {
-                Console.WriteLine("Car cannot be more than 4 doors.");
+                throw new ArgumentException("A car cannot have more than 4 doors.");
             }
         }
     }
-    
-    // methods tell the class what to do 
+
+    public void Accelerate()
+    {
+        Console.WriteLine("I am accelerating.");
+    }
+
+    public bool IsFamilyCar()
+    {
+        return numberOfDoors >= 4;
+    }
 }

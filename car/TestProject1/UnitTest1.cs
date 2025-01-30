@@ -1,16 +1,17 @@
+using CarBeep;
 namespace TestProject1;
-
 public class CarTest
 {
     [SetUp]
     public void Setup()
     {
+        
     }
-
     [Test]
-    public void Test1()
+    public void Class_Car_Color_Set()
     {
-        Assert.Pass();
-        //this is a test for git
+            //arrange act assert
+            Car myCar = new Car("Red", 2, true);
+            StringAssert.AreEqualIgnoringCase(myCar.Color, "Red");
     }
 }
