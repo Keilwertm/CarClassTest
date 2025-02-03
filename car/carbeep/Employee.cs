@@ -1,6 +1,6 @@
 using System.Runtime.CompilerServices;
 
-namespace Employee;
+namespace Employee1;
 
 public class Employee
 {
