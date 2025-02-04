@@ -15,6 +15,7 @@ namespace EmployeeTests
             string expected = "John Doe";
             string actual = newEmployee.Name;
             Assert.AreEqual(expected, actual);
+            // fix the errors with the first and last name not populating correclty. I also did work in CodeAcedemy today.
         }
     }
 }
