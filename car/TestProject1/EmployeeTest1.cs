@@ -49,8 +49,25 @@ namespace EmployeeTests
             // just slapping in my Code Academy code showing string conversions and I can reference it 
 
         }
+            public static void Main3(string[] args)
+        {
+            {
+                static void Main(string[] args)
+                {
+                    string[] summerStrut = new string[]
+                    {
+                        "Juice", "Missing", "Raspberry", "New",
+                        "Rebel", "Los", "Heat", "The End"
+                    };
+
+                    int[] ratings = { 1, 3, 4, 5, 4, 2, 1, 3 };
+                }
+            }
+        }
+
     }
 }
+                    // just slapping in an array I made so I can reference it 
 
 // Example: Testing a property that isn't fully defined yet.
         // Assuming you plan to use the 'jobHave' property in some meaningful way later,
