@@ -1,9 +1,10 @@
-using Employee1;
+using CarBeep;
 
 namespace EmployeeTests
 
 {
     public class EmployeeTestCases
+
     {
         [Test]
         public void EmployeeConstructor_SetsPropertiesCorrectly()
@@ -17,7 +18,7 @@ namespace EmployeeTests
     }
 
     //  <--------------------------------- Random Code Academy stuff ------------------------------>
-    
+
     public class GalacticTravelAgency
     {
         public static void name(string[] args)
@@ -52,17 +53,16 @@ namespace EmployeeTests
 
         }
 
-        public static void Main3(string[] args)
+        public static void Main2(string[] args)
         {
             {
 
                 {
 
                     {
-                        static void Main(string[] args)
+                        static void Main3(string[] args)
                         {
-                            string[] summerStrut;
-                            summerStrut = new string[]
+                            string[] summerStrut =
                             {
                                 "Juice", "Missing U", "Raspberry Beret", "New York Groove", "Make Me Feel",
                                 "Rebel Rebel", "Despacito", "Los Angeles"
@@ -70,7 +70,7 @@ namespace EmployeeTests
                             int[] ratings = { 5, 4, 4, 3, 3, 5, 5, 4 };
 
                             Console.WriteLine($"You rated the song, {summerStrut[1]}, {ratings[1]} Stars.");
-                            
+
                             summerStrut[7] = "newSong";
                             ratings[7] = 2;
 
@@ -80,24 +80,62 @@ namespace EmployeeTests
                 }
             }
         }
-                static void Main5(string[] args)
-                {     
-                    string[] summerStrut;
-      
-                    summerStrut = new string[] { "Juice", "Missing U", "Raspberry Beret", "New York Groove", "Make Me Feel", "Rebel Rebel", "Despacito", "Los Angeles" };
-      
-                    int[] ratings = { 5, 4, 4, 3, 3, 5, 5, 4 };
 
-                    int firstThree = Array.IndexOf(ratings, 3);
-                    Console.WriteLine($"Song number {firstThree + 1} is rated three stars");
+        static void Main4(string[] args)
+        {
+            string[] summerStrut;
 
-                    Array.Reverse(summerStrut);
-                    Console.WriteLine($"The new first song is {summerStrut[0]}. The new last song is {summerStrut[7]}.");
+            summerStrut = new string[]
+            {
+                "Juice", "Missing U", "Raspberry Beret", "New York Groove", "Make Me Feel", "Rebel Rebel", "Despacito",
+                "Los Angeles"
+            };
 
-                    Array.Sort(summerStrut);
-                    Console.WriteLine($"After sorting the list again, the new first song is {summerStrut[0]} The new last song is {summerStrut[7]}");
-                    
-                    // yep we be flippin it and reversing it - doing stuff with arrays 
-                }
-            }
+            int[] ratings = { 5, 4, 4, 3, 3, 5, 5, 4 };
+
+            int firstThree = Array.IndexOf(ratings, 3);
+            Console.WriteLine($"Song number {firstThree + 1} is rated three stars");
+
+            Array.Reverse(summerStrut);
+            Console.WriteLine($"The new first song is {summerStrut[0]}. The new last song is {summerStrut[7]}.");
+
+            Array.Sort(summerStrut);
+            Console.WriteLine(
+                $"After sorting the list again, the new first song is {summerStrut[0]} The new last song is {summerStrut[7]}");
+
+            // yep we be flippin it and reversing it - doing stuff with arrays 
         }
+
+        static void Main5(string[] args)
+        {
+            int emails = 20;
+            while (emails > 0)
+            {
+                emails--;
+                Console.WriteLine($"The remaining number of emails: {emails}");
+            }
+
+            Console.WriteLine("INBOX ZERO ACHIEVED!");
+
+            // I made a loop yipee 
+        }
+
+        static void Main6(string[] args)
+        {
+            bool buttonClick = true;
+
+            do
+            {
+                Console.WriteLine("Alarm Ringing");
+            } while (!buttonClick);
+
+            Console.WriteLine("Time for a five minute break.");
+            
+            // Uh half working loop "do" thing - for loop is next
+        }
+    }
+}
+
+    
+
+                    

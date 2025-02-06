@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("carbeep")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3583c306fa2dd77894e6a309fc195ac9bc97e139")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9615448f497957efaa500b7413c98fb0dad43276")]
 [assembly: System.Reflection.AssemblyProductAttribute("carbeep")]
 [assembly: System.Reflection.AssemblyTitleAttribute("carbeep")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
