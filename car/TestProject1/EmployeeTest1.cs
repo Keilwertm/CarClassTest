@@ -1,32 +1,34 @@
-using System;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Employee1;
 
 namespace EmployeeTests
 
 {
-    [SetUp]
     public class EmployeeTestCases
     {
         [Test]
         public void EmployeeConstructor_SetsPropertiesCorrectly()
         {
-            Employee newEmployee = new Employee("John", "Doe", 140);
+            Employee newEmployee = new Employee("John", "smith", 210, true);
             string expected = "John Doe";
             string actual = newEmployee.Name;
             Assert.AreEqual(expected, actual);
             // fix the errors with the first and last name not populating correclty. I also did work in CodeAcedemy today.
         }
     }
+
+    //  <--------------------------------- Random Code Academy stuff ------------------------------>
     
-    public class GalacticTravelAgency { 
-        public static void name(string[] args) {
+    public class GalacticTravelAgency
+    {
+        public static void name(string[] args)
+        {
             // Your code goes here
             string passengerName = "Zara";
             int passengerAge = 28;
             string ticketType = "First Class";
             string preferredPlanet = "Mars";
-            string fullInformation = string.Concat(passengerName, " ", passengerAge, " ", ticketType, " ", preferredPlanet);
+            string fullInformation =
+                string.Concat(passengerName, " ", passengerAge, " ", ticketType, " ", preferredPlanet);
 
             Console.WriteLine(fullInformation);
 
@@ -41,35 +43,61 @@ namespace EmployeeTests
             double implicintAge = passengerAge;
 
             Console.WriteLine(implicintAge);
-      
+
             string passengerAgeString = Convert.ToString(passengerAge);
 
             Console.WriteLine(passengerAgeString);
-            
+
             // just slapping in my Code Academy code showing string conversions and I can reference it 
 
         }
-            public static void Main3(string[] args)
+
+        public static void Main3(string[] args)
         {
             {
-                static void Main(string[] args)
-                {
-                    string[] summerStrut = new string[]
-                    {
-                        "Juice", "Missing", "Raspberry", "New",
-                        "Rebel", "Los", "Heat", "The End"
-                    };
 
-                    int[] ratings = { 1, 3, 4, 5, 4, 2, 1, 3 };
+                {
+
+                    {
+                        static void Main(string[] args)
+                        {
+                            string[] summerStrut;
+                            summerStrut = new string[]
+                            {
+                                "Juice", "Missing U", "Raspberry Beret", "New York Groove", "Make Me Feel",
+                                "Rebel Rebel", "Despacito", "Los Angeles"
+                            };
+                            int[] ratings = { 5, 4, 4, 3, 3, 5, 5, 4 };
+
+                            Console.WriteLine($"You rated the song, {summerStrut[1]}, {ratings[1]} Stars.");
+                            
+                            summerStrut[7] = "newSong";
+                            ratings[7] = 2;
+
+                            Console.WriteLine($"{summerStrut[7]}");
+                        }
+                    }
                 }
             }
         }
+                static void Main5(string[] args)
+                {     
+                    string[] summerStrut;
+      
+                    summerStrut = new string[] { "Juice", "Missing U", "Raspberry Beret", "New York Groove", "Make Me Feel", "Rebel Rebel", "Despacito", "Los Angeles" };
+      
+                    int[] ratings = { 5, 4, 4, 3, 3, 5, 5, 4 };
 
-    }
-}
-                    // just slapping in an array I made so I can reference it 
+                    int firstThree = Array.IndexOf(ratings, 3);
+                    Console.WriteLine($"Song number {firstThree + 1} is rated three stars");
 
-// Example: Testing a property that isn't fully defined yet.
-        // Assuming you plan to use the 'jobHave' property in some meaningful way later,
-        // you might write a test like this:
-        
+                    Array.Reverse(summerStrut);
+                    Console.WriteLine($"The new first song is {summerStrut[0]}. The new last song is {summerStrut[7]}.");
+
+                    Array.Sort(summerStrut);
+                    Console.WriteLine($"After sorting the list again, the new first song is {summerStrut[0]} The new last song is {summerStrut[7]}");
+                    
+                    // yep we be flippin it and reversing it - doing stuff with arrays 
+                }
+            }
+        }
