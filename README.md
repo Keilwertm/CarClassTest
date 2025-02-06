@@ -1,2 +1,2 @@
 # CarClassTest
-This is a test on constructing and building a car using classes and methods learning C#
+This has turned into a dump repo for all code academy practice and more
