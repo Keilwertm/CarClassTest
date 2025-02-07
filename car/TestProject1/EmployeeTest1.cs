@@ -144,5 +144,19 @@ namespace EmployeeTests
                         }
                                         // A for loop that I don't exactly understand
                     }
-                }
-            }
+                    
+                    static void Main8(string[] args)
+                    {
+                        string[] todo = {"respond to email", "make wireframe", "program feature", "fix bugs"};
+      
+                        foreach (string task in todo)
+                        {
+                            Console.WriteLine($"[] {task}");
+                                
+                                // anotha one
+                        }
+        }
+    }
+}
+                
+            
