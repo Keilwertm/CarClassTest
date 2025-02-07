@@ -1,0 +1,11 @@
+C:\Users\mkeilwert\RiderProjects\LeapYearStuff\LeapYearStuff\bin\Debug\net8.0\LeapYearStuff.deps.json
+C:\Users\mkeilwert\RiderProjects\LeapYearStuff\LeapYearStuff\bin\Debug\net8.0\LeapYearStuff.dll
+C:\Users\mkeilwert\RiderProjects\LeapYearStuff\LeapYearStuff\bin\Debug\net8.0\LeapYearStuff.pdb
+C:\Users\mkeilwert\RiderProjects\LeapYearStuff\LeapYearStuff\obj\Debug\net8.0\LeapYearStuff.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\mkeilwert\RiderProjects\LeapYearStuff\LeapYearStuff\obj\Debug\net8.0\LeapYearStuff.AssemblyInfoInputs.cache
+C:\Users\mkeilwert\RiderProjects\LeapYearStuff\LeapYearStuff\obj\Debug\net8.0\LeapYearStuff.AssemblyInfo.cs
+C:\Users\mkeilwert\RiderProjects\LeapYearStuff\LeapYearStuff\obj\Debug\net8.0\LeapYearStuff.csproj.CoreCompileInputs.cache
+C:\Users\mkeilwert\RiderProjects\LeapYearStuff\LeapYearStuff\obj\Debug\net8.0\LeapYearStuff.dll
+C:\Users\mkeilwert\RiderProjects\LeapYearStuff\LeapYearStuff\obj\Debug\net8.0\refint\LeapYearStuff.dll
+C:\Users\mkeilwert\RiderProjects\LeapYearStuff\LeapYearStuff\obj\Debug\net8.0\LeapYearStuff.pdb
+C:\Users\mkeilwert\RiderProjects\LeapYearStuff\LeapYearStuff\obj\Debug\net8.0\ref\LeapYearStuff.dll

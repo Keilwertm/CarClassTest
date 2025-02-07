@@ -130,12 +130,19 @@ namespace EmployeeTests
             } while (!buttonClick);
 
             Console.WriteLine("Time for a five minute break.");
-            
+
             // Uh half working loop "do" thing - for loop is next
         }
-    }
-}
-
-    
-
-                    
+                
+                    static void Main7(string[] args)
+                    { 
+                        for(int i = 1; i <= 16; i++) {
+                            Console.WriteLine($"Week {i}");
+                            Console.WriteLine("Announcements: \n \n \n ");
+                            Console.WriteLine("Report Backs: \n \n \n");
+                            Console.WriteLine("Discussion Items: \n \n \n");
+                        }
+                                        // A for loop that I don't exactly understand
+                    }
+                }
+            }
