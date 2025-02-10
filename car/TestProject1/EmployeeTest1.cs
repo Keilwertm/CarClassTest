@@ -155,8 +155,34 @@ namespace EmployeeTests
                                 
                                 // anotha one
                         }
-        }
+                        
+                        static void Main9(string[] args)
+                        {
+                            string[] websites = { "twitter", "facebook", "gmail" };
+                                                  
+                            foreach (string website in websites)
+                            { 
+                                Console.WriteLine(website);
+                            }
+                        }
+                    }
+                    
+                    static void Main10(string[] args)
+                    {
+                        bool buttonClick = false;
+                        int clockTime = 0;
+  
+                        do
+                        {
+                            Console.WriteLine("Alarm Ringing");
+                            clockTime++;
+
+                            if (clockTime == 3)
+                            {
+                                break;
+                            }
+                        } while(!buttonClick);
+                    }
     }
 }
-                
-            
+    
