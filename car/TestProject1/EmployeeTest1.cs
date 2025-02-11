@@ -219,6 +219,56 @@ namespace EmployeeTests
                         Console.WriteLine($"The 2012 marathon was ran in {time} minutes!");
 
                     }
+                    static void Main14()
+                    {
+                        List<double> marathons = new List<double>
+                        {
+                            144.07,
+                            143.12,
+                            146.73,
+                            146.33
+                        };
+
+                        marathons.Add(143.23);
+
+
+                        Console.WriteLine(marathons.Count);
+                        Console.WriteLine(marathons.Contains(143.23));
+
+                    }
+                    
+                    static void Main15()
+                    {
+                        List<double> marathons = new List<double>
+                        {
+                            144.07,
+                            143.12,
+                            146.73,
+                            146.33
+                        };
+      
+                        Console.WriteLine(marathons[1]);
+                        bool removed = marathons.Remove(143.12);
+                        Console.WriteLine(marathons[1]);
+                        Console.WriteLine(removed);
+
+                    }
+                    
+                    static void Main()
+                    {
+                        List<double> marathons = new List<double>
+                        {
+                            148.22,
+                            156.10,
+                            153.88,
+                            155.34,
+                            160.89
+                        };
+      
+                        Console.WriteLine($"Count: {marathons.Count}");
+                        marathons.Clear();
+                        Console.WriteLine($"Count: {marathons.Count}");
+                    }
     }
 }
     
