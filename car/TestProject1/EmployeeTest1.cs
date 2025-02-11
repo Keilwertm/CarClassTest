@@ -254,7 +254,7 @@ namespace EmployeeTests
 
                     }
                     
-                    static void Main()
+                    static void Main16()
                     {
                         List<double> marathons = new List<double>
                         {
