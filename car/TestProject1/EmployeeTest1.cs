@@ -306,9 +306,24 @@ namespace EmployeeTests
             {
                 Console.WriteLine(d);
             }
+
+            static void Main19()
+            {
+                List<bool> boolList = new List<bool>();
+                List<Random> randomList = new List<Random>();
+                List<IServiceProvider> serviceList = new List<IServiceProvider>();
+            }
+        }
+
+        static void Main20()
+        {
+            List<string> citiesList = new List<string> { "Delhi", "Los Angeles", "Saint Petersburg", "Provo" };
+            citiesList.Add("Saratoga");
+
+            foreach (string cityName in citiesList)
+            {
+                Console.WriteLine(cityName);
+            }
         }
     }
 }
-    
-
-    
