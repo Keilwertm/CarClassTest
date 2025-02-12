@@ -325,5 +325,32 @@ namespace EmployeeTests
                 Console.WriteLine(cityName);
             }
         }
+        
+        static void Main21(string[] args)
+        {
+            string designer = "Anders Hejlsberg";
+      
+            Console.WriteLine(designer);
+
+            int indexOfSpace = designer.IndexOf(" ");
+            int indexOfSecondName = indexOfSpace + 1;
+
+            string secondName = designer.Substring(indexOfSecondName);
+            Console.WriteLine(secondName);
+            
+            // um kind of learning methods. Making a method here to store and call the second name of the string
+
+        }
+        static void Main22(string[] args)
+        {
+            VisitPlanets();
+        }
+    
+        static void VisitPlanets()
+        {
+            Console.WriteLine("You visited many new planets...");
+        }
+        
+        // uh calling a made method inside of the main after making it outside. Probably going to expand stuff
     }
 }
