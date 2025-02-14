@@ -352,5 +352,17 @@ namespace EmployeeTests
         }
         
         // uh calling a made method inside of the main after making it outside. Probably going to expand stuff
+        
+        static void Main23(string[] args)
+        {
+            Console.WriteLine(DecoratePlanet("Jupiter"));    
+        }
+    
+        static string DecoratePlanet(string planet)
+        {
+            return $"*..*..* Welcome to {planet} *..*..*";
+            
+            // look at this one some more later on, using a method outside of the string first and then adding it later
+        }
     }
 }
