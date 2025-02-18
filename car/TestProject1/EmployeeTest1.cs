@@ -351,7 +351,7 @@ namespace EmployeeTests
             Console.WriteLine("You visited many new planets...");
         }
         
-        // uh calling a made method inside of the main after making it outside. Probably going to expand stuff
+        // uh calling a made method inside the main after making it outside. Probably going to expand stuff
         
         static void Main23(string[] args)
         {
@@ -364,5 +364,27 @@ namespace EmployeeTests
             
             // look at this one some more later on, using a method outside of the string first and then adding it later
         }
-    }
+        
+        static void Main24(string[] args)
+        {
+            IntroduceFriends("Laika", "Albert");
+            IntroduceFriends("Naomi", "Jasmine", "Cyrus");
+            IntroduceFriends();
+        }
+    
+        static void IntroduceFriends(string friend1, string friend2)
+        {
+            Console.WriteLine($"These are my friends, {friend1} and {friend2}!");
+        }  
+    
+        static void IntroduceFriends(string friend1, string friend2, string friend3)
+        {
+            Console.WriteLine($"These are my friends, {friend1}, {friend2}, and {friend3}!");
+        }  
+    
+        static void IntroduceFriends()
+        {
+            Console.WriteLine("There is no one who needs to be introduced.");
+        }
+    }           //overloading methods, need to return to this. 
 }
