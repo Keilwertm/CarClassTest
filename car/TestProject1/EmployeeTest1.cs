@@ -385,6 +385,26 @@ namespace EmployeeTests
         static void IntroduceFriends()
         {
             Console.WriteLine("There is no one who needs to be introduced.");
+            
+            //overloading methods, need to return to this. 
         }
-    }           //overloading methods, need to return to this. 
+        
+        static void CalculateRectangle(int length, int width, out int area, out int perimeter)
+        {
+            area = length * width;
+            perimeter = 2 * (length + width);
+        }
+
+        static void Main25()
+        {
+            int length = 5;
+            int width = 3;
+        
+            CalculateRectangle(length, width, out int area, out int perimeter);
+
+            Console.WriteLine($"Area: {area}"); // Prints "Area: 15"
+            Console.WriteLine($"Perimeter: {perimeter}"); // Prints "Perimeter: 16"
+        }
+            // out parameters 
+    }          
 }
