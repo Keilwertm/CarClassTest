@@ -406,5 +406,44 @@ namespace EmployeeTests
             Console.WriteLine($"Perimeter: {perimeter}"); // Prints "Perimeter: 16"
         }
             // out parameters 
+            
+static void Main26(string[] args)
+    {
+      string scoreAsString = "85.6";
+      string statement = "Hello World";
+      
+      double scoreAsDouble;
+      bool outcome;
+
+      outcome = Double.TryParse(scoreAsString, out scoreAsDouble);
+
+      Console.WriteLine($"{outcome}, {scoreAsDouble}");
+
+      string whispered = Whisper(statement, out bool marker);
+      Console.WriteLine(whispered);
+    }  
+
+    static string Whisper(string phrase, out bool wasWhisperCalled)
+    {
+      wasWhisperCalled = true;
+      return phrase.ToLower();
+    }
+    //Out Parameters are a way to intereact and parse things without touching the main code. This is better than just 
+    // a console.WriteLine() because you can change the values of data types without interacting with the code
+    
+    static void Main27(string[] args)
+    {
+        VisitPlanets(3);
+        VisitPlanets(4);
+        VisitPlanets(5);
+        VisitPlanets();
+    }
+    
+    static void VisitPlanets(int numberOfPlanets = 0)
+    {
+        Console.WriteLine($"You visited {numberOfPlanets} new planets...");
+    }
+        // We can call VisitPlanets(); with not int input, because the out parameter of "= 0" gives it a defualt value
+        //...I think
     }          
 }
