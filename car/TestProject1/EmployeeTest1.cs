@@ -445,5 +445,25 @@ static void Main26(string[] args)
     }
         // We can call VisitPlanets(); with not int input, because the out parameter of "= 0" gives it a defualt value
         //...I think
+        
+        static void Main28(string[] args)
+        {
+            VisitPlanets();
+            VisitPlanets(numberOfPlanets: 2);
+            VisitPlanets(numberOfPlanets: 2, name: "Mel");
+        }
+    
+        static void VisitPlanets(
+            string adjective = "brave",
+            string name = "Cosmonaut", 
+            int numberOfPlanets = 0,
+            double gForce = 4.2)
+        {
+            Console.WriteLine($"Welcome back, {adjective} {name}.");
+            Console.WriteLine($"You visited {numberOfPlanets} new planets...");
+            Console.WriteLine($"...while experiencing a g-force of {gForce} g!");
+        }
+        
+        // working with names arguments and some string catination 
     }          
 }
