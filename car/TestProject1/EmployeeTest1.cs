@@ -465,15 +465,19 @@ static void Main26(string[] args)
         }
         
         // working with names arguments and some string catination 
-        
-       
+
         class Program
         {
             static void Main29(string[] args)
             {
-                Forest f = new Forest();
+                Forest forest = new Forest(); // Create an instance of Forest
             }
         }
+        class Forest
+        {
+            // Class definition without infinite recursion
+        }
+        
         // class instantiation??
     }
-    }          
+}          
