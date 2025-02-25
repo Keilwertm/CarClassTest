@@ -465,5 +465,15 @@ static void Main26(string[] args)
         }
         
         // working with names arguments and some string catination 
+        
+       
+        class Program
+        {
+            static void Main29(string[] args)
+            {
+                Forest f = new Forest();
+            }
+        }
+        // class instantiation??
+    }
     }          
-}
