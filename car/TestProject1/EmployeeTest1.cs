@@ -475,9 +475,23 @@ static void Main26(string[] args)
         }
         class Forest
         {
-            // Class definition without infinite recursion
+            
         }
         
         // class instantiation??
+        
+                static void Main30(string[] args)
+                {
+                    Forest f = new Forest();
+                    f.name = "Congo";
+                    f.trees = 0;
+                    f.age = 0;
+                    f.biome = "Tropical";
+      
+                    Console.WriteLine(f.name);
+                }
+            }
+        
+
     }
-}          
+}         
