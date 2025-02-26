@@ -473,10 +473,6 @@ static void Main26(string[] args)
                 Forest forest = new Forest(); // Create an instance of Forest
             }
         }
-        class Forest
-        {
-            
-        }
         
         // class instantiation??
         
@@ -490,8 +486,31 @@ static void Main26(string[] args)
       
                     Console.WriteLine(f.name);
                 }
-            }
-        
+                public class Forest
+                {
+                    public string name;
+                    public int trees;
+                    public int age;
+                    public string biome;
+                    public int grow;
+
+                    public int Grow()
+                    {
+                        this.trees += 30;
+                        this.age++;
+                        return this.trees;
+                    }
+    
+                    public int Burn()
+                    {
+                        trees -= 20;
+                        age++;
+                        return trees;
+                    }
+
+                }               // working some methods some more
+                
+                
 
     }
-}         
+}
