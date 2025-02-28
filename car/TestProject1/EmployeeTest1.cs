@@ -510,7 +510,33 @@ static void Main26(string[] args)
 
                 }               // working some methods some more
                 
-                
+                public class Forest1
+                {
+                    public string name;
+                    public int trees;
+                    public int age;
+                    public string biome;
 
+                    public Forest1(string name, string biome)
+                    {
+                        this.name = name;
+                        this.biome = biome;
+                        age = 1;
+                    }
+
+                    public int Grow()
+                    {
+                        this.trees += 30;
+                        this.age++;
+                        return this.trees;
+                    }
+
+                    public int Burn() 
+                    {
+                        trees -= 20;
+                        age++;
+                        return trees;
+                    }
+                }
     }
 }
