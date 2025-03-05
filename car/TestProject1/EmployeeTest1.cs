@@ -581,5 +581,42 @@ static void Main26(string[] args)
                     Amazon.Grow();
                     Console.WriteLine(Amazon.trees);
                 }
+                
+                lass Program
+                {
+                    static void Main(string[] args)
+                {
+                    Forest f = new Forest("Congo", "Tropical");
+                    f.AnnounceForest();
+                    f.Grow();
+                    f.AnnounceForest();
+                }
+    }
+                
+                class Forest
+                {
+                    public string name;
+                    private int trees;
+                    private int age;
+                    public string biome;
+
+                    public Forest(string name, string biome) 
+                    {
+                        this.name = name;
+                        this.biome = biome;
+                        age = 1;
+                    }
+
+                    public void Grow() 
+                    {
+                        trees += 20;
+                        age++;
+                    }
+
+                    public void AnnounceForest()
+                    {
+                        Console.WriteLine($"The {name} {biome} Forest is {age} years old and has {trees} trees");
+                    }
+                }
     }
 }
