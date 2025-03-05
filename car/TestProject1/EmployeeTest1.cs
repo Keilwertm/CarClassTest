@@ -539,30 +539,47 @@ static void Main26(string[] args)
                     }
                 }
                 
-                public Forest(string name, string biome) 
+             public class Forest3
                 {
-                    this.name = name;
-                    this.biome = biome;
-                    age = 1;
-                }
+                    public string name;
+                    public int trees;
+                    public int age;
+                    public string biome;
 
-                public Forest(string name) : this(name, "Unknown")
-                {
-                    Console.WriteLine("No biome provided, using default value \"Unknown\".");
-                }
+                    public Forest(string name, string biome) 
+                    {
+                        this.name = name;
+                        this.biome = biome;
+                        age = 1;
+                    }
 
-                public int Grow()
-                {
-                    this.trees += 30;
-                    this.age++;
-                    return this.trees;
-                }
+                    public (string name) : this(name, "Unknown")
+                    {
+                        Console.WriteLine("No biome provided, using default value \"Unknown\".");
+                    }
 
-                public int Burn() 
+                    public int Grow()
+                    {
+                        this.trees += 30;
+                        this.age++;
+                        return this.trees;
+                    }
+
+                    public int Burn() 
+                    {
+                        trees -= 20;
+                        age++;
+                        return trees;
+                    }
+                }
+             
+                static void Main31(string[] args)
                 {
-                    trees -= 20;
-                    age++;
-                    return trees;
+      
+                    Forest Amazon = new Forest("Amazon");
+                    Console.WriteLine(Amazon.trees);
+                    Amazon.Grow();
+                    Console.WriteLine(Amazon.trees);
                 }
     }
 }
