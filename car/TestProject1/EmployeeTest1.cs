@@ -465,16 +465,6 @@ static void Main26(string[] args)
         }
         
         // working with names arguments and some string catination 
-
-        class Program
-        {
-            static void Main29(string[] args)
-            {
-                Forest forest = new Forest(); // Create an instance of Forest
-            }
-        }
-        
-        // class instantiation??
         
                 static void Main30(string[] args)
                 {
@@ -573,16 +563,14 @@ static void Main26(string[] args)
                     }
                 }
              
-                static void Main31(string[] args)
-                {
       
                     Forest Amazon = new Forest("Amazon");
                     Console.WriteLine(Amazon.trees);
                     Amazon.Grow();
                     Console.WriteLine(Amazon.trees);
-                }
                 
-                lass Program
+                
+                class Program
                 {
                     static void Main(string[] args)
                 {
@@ -591,10 +579,7 @@ static void Main26(string[] args)
                     f.Grow();
                     f.AnnounceForest();
                 }
-    }
-                
-                class Forest
-                {
+               
                     public string name;
                     private int trees;
                     private int age;
